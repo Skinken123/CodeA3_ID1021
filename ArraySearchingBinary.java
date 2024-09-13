@@ -81,7 +81,9 @@ public class ArraySearchingBinary {
             int[]keys = createUnsortedArray(k,n);
             int[]so = createSortedArray(n);
             
-            binary_search(sizes, k);
+            for (int i = 0; i < k; i++) {
+                binary_search(so, keys[i]);
+            }
         }
     }
 }
